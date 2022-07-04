@@ -1,1 +1,1 @@
-web: python server.py
+web: gunircorn app:app
