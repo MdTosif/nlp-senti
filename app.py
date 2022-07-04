@@ -11,8 +11,8 @@ app = Flask(__name__)
 @app.route("/", methods=["POST"])
 def isNegative():
     record = json.loads(request.data)
-    isNegativeNLP(record['text'])
-    return jsonify({"isNegative": False})
+    a = isNegativeNLP(record['text'])
+    return jsonify({"isNegative": a})
 
 
 # app.run( po)
