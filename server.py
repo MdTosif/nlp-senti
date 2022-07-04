@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 import json
+import os
 from flask import Flask, request, jsonify
 from nlpSentiment import *
 
@@ -14,4 +15,4 @@ def isNegative():
     return jsonify({"isNegative": False})
 
 
-app.run(debug=True, port=3000)
+app.run(debug=True, port=os.environ.get('PORT', 3000))
