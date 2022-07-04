@@ -15,4 +15,4 @@ def isNegative():
     return jsonify({"isNegative": False})
 
 
-app.run(debug=True, port=os.environ.get('PORT', 3000))
+app.run( port=os.environ.get('PORT', 3000))
